@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(170, 195, 224) 100%);
+            font-family:"Montserrat";
+            overflow: hidden;
+        }
+        h1{
+            text-shadow: 0 0 3px #ff00a6, 0 0 5px #ff00fb;
+            font-family:"Montserrat-Thin";
+            font-size: 4rem;
+            line-height: 1.5; 
+        }
+    </style>
+</head>
+<header>
+
+</header>
+<body>
+    <br>
+    <br>
+    <br>
+    <center>
+        <h1>Bond Calculator</h1>
+    
+        <img src="https://images.pexels.com/photos/1767434/pexels-photo-1767434.jpeg?cs=srgb&dl=pexels-pengwhan-1767434.jpg&fm=jpg" height="250" width="300" class="img-fluid" alt="...">
+     <br>
+     <br>
+     <form >
+             
+        <div class="container">
+            Enter your name ❤️:<input type="text" name="name1" placeholder="Your Name" id="name1" required><br><br>
+            Enter your Fav person's name 💕:<input type="text" name="text" placeholder="Their Name" id="name" required>
+          </div>
+        
+        <br>
+        <div class="text-center">
+        <button class="btn bg-gradient btn btn-outline-secondary bg-opacity-25" type="submit" onclick="fun()">Submit</button>
+    </div>
+        <!-- <div class="text-center"><input type="submit" class="submit"></div> -->
+      </form>
+    </center>
+    <script>
+        function fun(){
+            if(document.getElementById("name").value && document.getElementById("name1").value)
+            {
+            var c=Math.random()*100;
+            c=Math.floor(c)+1;
+            alert("the bond between you is: "+c+"%");
+            }
+            else{
+                alert("Plz enter something..")
+            }
+        }
+    </script>
+    
+</body>
+</html>
